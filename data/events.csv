@@ -1,0 +1,11 @@
+timestamp;appName;eventType;userId;sessionId;eventData
+2024-01-15T10:30:10;MobileApp;APP_START;USR001;SES001;"{"platform":"Android","version":"2.5.1"}"
+2024-01-15T10:35:22;FitnessTracker;WORKOUT_START;USR002;SES002;"{"type":"running","duration":30,"distance":5.2}"
+2024-01-15T10:40:45;MobileApp;BUTTON_CLICK;USR001;SES001;"{"button":"signin","screen":"LoginActivity"}"
+2024-01-15T10:50:33;FitnessTracker;HEART_RATE_UPDATE;USR002;SES002;"{"bpm":145,"zone":"cardio"}"
+2024-01-15T11:05:15;MobileApp;PAGE_VIEW;USR003;SES003;"{"page":"dashboard","load_time_ms":234}"
+2024-01-15T11:20:08;FitnessTracker;WORKOUT_PAUSE;USR002;SES002;"{"duration_so_far":15,"calories_burned":150}"
+2024-01-15T11:45:44;MobileApp;API_CALL;USR001;SES001;"{"endpoint":"/api/users/profile","status_code":200,"response_time_ms":567}"
+2024-01-15T12:10:22;FitnessTracker;SOCIAL_SHARE;USR003;SES004;"{"platform":"Facebook","activity":"10K_Run"}"
+2024-01-15T13:30:55;MobileApp;CRASH_REPORT;USR004;SES005;"{"error_code":"ERR001","timestamp":"2024-01-15T13:29:12"}"
+2024-01-15T14:15:33;FitnessTracker;SYNC_DATA;USR002;SES002;"{"synced_records":45,"total_size_kb":234.5}"";"java.lang.NullPointerException at SyncManager.sync() line 44";"iPhone 12";"iOS 17.0"

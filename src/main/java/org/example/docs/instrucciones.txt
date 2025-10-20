@@ -1,0 +1,44 @@
+Ejercicio: Consolidación de Logs de Aplicaciones Móviles (Ejercicio no evaluable)
+Una empresa de desarrollo de aplicaciones móviles necesita un sistema para
+procesar logs desde dos fuentes diferentes: logs de errores capturados por un
+servicio de crash reporting y logs de eventos de usuario capturados por un
+SDK de analytics.
+Historias de Usuario
+HU-01: Cargar y parsear archivo de crashes Como analista de calidad,
+Quiero que el sistema lea un archivo CSV con logs de crashes de aplicaciones,
+Para poder procesar toda la información de errores reportados.
+A tener en cuenta: El archivo de entrada crashes.csv usa ; como separador
+de campos.
+Los campos del archivo son:
+timestamp, appName, errorCode, errorMessage, stackTrace, deviceModel, osVersion
+
+El campo errorMessage y stackTrace pueden contener caracteres especiales y
+saltos de línea, encerrados entre comillas dobles (")
+
+HU-02: Cargar y parsear archivo de eventos de usuario
+Como especialista en analytics, Quiero que el sistema lea un archivo CSV
+con logs de eventos de usuario, Para complementar el análisis con información
+de comportamiento de aplicaciones.
+A tener en cuenta: El archivo de entrada events.csv usa ; como separador de campos
+
+Los campos del archivo son:
+timestamp, appName, eventType, userId, sessionId, eventData
+El campo eventData puede contener caracteres especiales encerrados entre
+comillas dobles
+
+HU-03: Procesar y consolidar datos de ambas fuentes
+Como ingeniero de datos, Quiero que el sistema procese los logs de crashes y eventos
+Para generar un análisis consolidado con métricas por aplicación.
+
+Se deben combinar ambos archivos en una estructura de datos unificada
+Se debe calcular, para cada aplicación:
+Total de crashes ocurridos Total de eventos capturados
+-Tasa de error (crashes / eventos totales, expresada como porcentaje)
+-Se debe generar un archivo analysis_report.json con la información consolidada
+usando Jackson. Se debe usar Jackson ObjectMapper para serializar a JSON
+-El JSON debe ser formateado (pretty-printed) y fácil de leer
+-Implementar todas las clases necesarias con una arquitectura adecuada y
+probar la funcionalidad desde el main()
+
+Se deben Justificar todas la elecciones tomadas.
+La implementación ha de ser como lo realizado en los ejemplos de clase, usando exclusivamente métodos y patrones vistos en clase.

@@ -1,0 +1,11 @@
+timestamp;appName;errorCode;errorMessage;stackTrace;deviceModel;osVersion
+2024-01-15T10:30:45;MobileApp;ERR001;"Null Pointer Exception";"java.lang.NullPointerException at MainActivity.onCreate() line 42";"Pixel 6 Pro";"Android 14"
+2024-01-15T10:45:22;FitnessTracker;ERR002;"Database Connection Failed";"com.db.ConnectionError at DBManager.connect() line 87\njava.sql.SQLException: Connection timeout";"iPhone 14";"iOS 17.2"
+2024-01-15T11:12:08;MobileApp;ERR003;"Memory Leak Detected";"java.lang.OutOfMemoryError in ImageCache at line 156";"Samsung Galaxy S23";"Android 13"
+2024-01-15T11:35:44;FitnessTracker;ERR001;"Null Pointer Exception";"java.lang.NullPointerException at UserService.getProfile() line 23";"iPhone 13";"iOS 17.1"
+2024-01-15T12:01:15;MobileApp;ERR002;"Network Timeout";"java.net.SocketTimeoutException at ApiClient.fetchData() line 67";"Pixel 5a";"Android 12"
+2024-01-15T12:45:33;FitnessTracker;ERR003;"Invalid JSON Format";"com.fasterxml.jackson.JsonParseException at line 145\nUnexpected token: COMMA";"iPad Pro";"iPadOS 17.2"
+2024-01-15T13:20:11;MobileApp;ERR001;"Null Pointer Exception";"java.lang.NullPointerException at MainActivity.onCreate() line 42";"OnePlus 11";"Android 14"
+2024-01-15T14:05:22;FitnessTracker;ERR002;"Database Connection Failed";"com.db.ConnectionError at DBManager.execute() line 98";"iPhone 15 Pro";"iOS 17.3"
+2024-01-15T14:50:47;MobileApp;ERR004;"Permission Denied";"java.lang.SecurityException at CameraManager.startRecording() line 78";"Xiaomi 13";"Android 13"
+2024-01-15T15:30:19;FitnessTracker;ERR001;"Null Pointer Exception";"java.lang.NullPointerException at SyncManager.sync() line 44";"iPhone 12";"iOS 17.0"

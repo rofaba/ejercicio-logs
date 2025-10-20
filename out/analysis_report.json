@@ -1,0 +1,11 @@
+[ {
+  "appName" : "MobileApp",
+  "totalCrashes" : 5,
+  "totalEvents" : 5,
+  "errorRatePct" : 100.00
+}, {
+  "appName" : "FitnessTracker",
+  "totalCrashes" : 5,
+  "totalEvents" : 5,
+  "errorRatePct" : 100.00
+} ]
